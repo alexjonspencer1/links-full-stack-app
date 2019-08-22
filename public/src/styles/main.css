@@ -8,7 +8,7 @@ header {
 }
 
 .header-logo {
-    height: 12%;
+    height: auto;
     width: 12%;
     margin: 5px 5px;
 }
@@ -20,6 +20,7 @@ header h1 {
 
 header nav a {
     font-size: 1rem;
+    color: darkgreen;
 }
 
 header nav {
@@ -65,3 +66,22 @@ li p {
     margin-bottom: 5px;
     color: rgb(83, 83, 83);
 }
+
+@media only screen and (max-width: 650px) {
+    header h1 {
+        font-size: 1em;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav a {
+        font-size: 0.9rem;
+    }
+    .header-logo {
+        height: 90px;
+        width: auto;
+        margin: 5px 5px;
+    }
+    
+  }
