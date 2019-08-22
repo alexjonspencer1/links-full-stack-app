@@ -14,7 +14,7 @@ class LinksListApp extends Component {
         const main = dom.querySelector('main');
         main.appendChild(list.renderDOM());
 
-        golfCourse().then(golfCourse => {
+        getGolfCourse().then(golfCourse => {
             list.update({ golfCourse });
         });
 
