@@ -2,7 +2,7 @@
 const URL = '/api';
 
 export function getGolfCourse() {
-    const url = `${URL}/golfCourse`;
+    const url = `${URL}/golfcourse`;
 
     return fetch(url)
         .then(response => response.json());
