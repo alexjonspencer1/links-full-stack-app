@@ -4,12 +4,13 @@ header {
     align-items: center;
     font-family: 'Slabo 27px', serif;
     background-color: #eee;
-    padding: 
+    padding: 15px 15px;
 }
 
 .header-logo {
-    height: 15%;
-    width: 15%;
+    height: 12%;
+    width: 12%;
+    margin: 5px 5px;
 }
 
 header h1 {
@@ -23,4 +24,43 @@ header nav a {
 
 header nav {
     margin-right: 2%;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-top: 20px;
+
+}
+
+.golf-card-image {
+    height: 80%;
+}
+
+li h1 {
+    font-size: 1.3em;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Slabo 27px', serif;
+    border: 2px solid darkgreen;
+    background:white;
+    height: 200px;
+}
+
+li p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(83, 83, 83);
 }
