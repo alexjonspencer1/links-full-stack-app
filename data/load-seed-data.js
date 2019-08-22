@@ -1,7 +1,7 @@
 require('dotenv').config();
 const pg = require('pg');
 const Client = pg.Client;
-const golfcourse = require('./golfcourse');
+const golfcourse = require('./links');
 
 const client = new Client(process.env.DATABASE_URL);
 
@@ -11,7 +11,7 @@ client.connect()
             golfcourse.map(golfCourse => {
                 return client.query(`
                 INSERT INTO golfcourse (name, location, par, yards, architect, year, url, hosted_a_major)
-                VALUES ($1, $2, $3, $4, $5, $6, $7);
+                VALUES ($1, $2, $3, $4, $5, $6, $7, $8);
 
                 `,
                 [golfCourse.name, golfCourse.location, golfCourse.par, golfCourse.yards, golfCourse.architect, golfCourse.year, golfCourse.url, golfCourse.hasHostedMajor]);

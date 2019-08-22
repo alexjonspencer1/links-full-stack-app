@@ -10,12 +10,12 @@ client.connect()
     .then(() => {
         return client.query(`
             CREATE TABLE golfcourse (
-                name SERIAL PRIMARY KEY NOT NULL,
+                name VARCHAR(256) NOT NULL,
                 location VARCHAR(256) NOT NULL,
                 par INTEGER NOT NULL,
                 yards INTEGER NOT NULL,
                 architect VARCHAR(256) NOT NULL,
-                year INTEGER NOT NULL,
+                year INTEGER,
                 url VARCHAR(256) NOT NULL,
                 hosted_a_major BOOLEAN NOT NULL
             );
