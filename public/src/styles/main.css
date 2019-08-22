@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Slabo 27px', serif;
+    background-color: #eee;
+    padding: 
+}
+
+.header-logo {
+    height: 15%;
+    width: 15%;
+}
+
+header h1 {
+    font-size: 3.0em;
+    flex-grow: 1;
+}
+
+header nav a {
+    font-size: 1rem;
+}
+
+header nav {
+    margin-right: 2%;
+}
