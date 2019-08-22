@@ -8,7 +8,7 @@
     "sourceType": "module"
   },
   "env": {
-    "node": true,
+    "browser": true,
     "es6": true
   },
   "globals": {
@@ -16,7 +16,7 @@
   },
   "rules": {
     "eqeqeq": ["error", "always"],
-    "no-console": "off",
+    "no-console": "warn",
     "indent": [
       "error",
       4,
