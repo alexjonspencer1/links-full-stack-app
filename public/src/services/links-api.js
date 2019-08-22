@@ -1,8 +1,8 @@
 
-const url = //INSERT URL HERE
+const URL = '/api';
 
 export function getGolfCourse() {
-    const url = `${URL}/` //PUT SOMETHING HERE TOO
+    const url = `${URL}/golfcourse`;
 
     return fetch(url)
         .then(response => response.json());

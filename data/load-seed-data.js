@@ -10,11 +10,11 @@ client.connect()
         return Promise.all(
             golfcourse.map(golfCourse => {
                 return client.query(`
-                INSERT INTO golfcourse (name, location, par, yards, architect, year, hosted_a_major)
+                INSERT INTO golfcourse (name, location, par, yards, architect, year, url, hosted_a_major)
                 VALUES ($1, $2, $3, $4, $5, $6, $7);
 
                 `,
-                [golfCourse.name, golfCourse.location, golfCourse.par, golfCourse.yards, golfCourse.architect, golfCourse.year, golfCourse.hasHostedMajor]);
+                [golfCourse.name, golfCourse.location, golfCourse.par, golfCourse.yards, golfCourse.architect, golfCourse.year, golfCourse.url, golfCourse.hasHostedMajor]);
             })
         );
     })

@@ -19,6 +19,27 @@ app.use(cors());
 app.use(express.static('public'));
 
 //ROUTES HERE
+app.get('./api/golfcourse', (req, res) => {
+    client.query(`
+        SELECT
+            name,
+            location,
+            par,
+            yards,
+            architect,
+            year,
+            url,
+            hosted_a_major as "hasHostedMajor"
+    `)
+        .then(result => {
+            res.json(result.rows);
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err.message || err
+            });
+        });
+});
 
 
 //Start the server
