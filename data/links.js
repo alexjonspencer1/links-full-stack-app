@@ -70,54 +70,14 @@ module.exports = [
         hasHostedMajor: true, //Insert boolean value here
     },
     {
-        name: '',
-        location: '',
-        par: '',
-        yards: '',
-        architect: '',
-        yearBuilt: '',
-        url: '',
-        hasHostedMajor: '', //Insert boolean value here
-    },
-    {
-        name: '',
-        location: '',
-        par: '',
-        yards: '',
-        architect: '',
-        yearBuilt: '',
-        url: '',
-        hasHostedMajor: '', //Insert boolean value here
-    },
-    {
-        name: '',
-        location: '',
-        par: '',
-        yards: '',
-        architect: '',
-        yearBuilt: '',
-        url: '',
-        hasHostedMajor: '', //Insert boolean value here
-    },
-    {
-        name: '',
-        location: '',
-        par: '',
-        yards: '',
-        architect: '',
-        yearBuilt: '',
-        url: '',
-        hasHostedMajor: '', //Insert boolean value here
-    },
-    {
-        name: '',
-        location: '',
-        par: '',
-        yards: '',
-        architect: '',
-        yearBuilt: '',
-        url: '',
-        hasHostedMajor: '', //Insert boolean value here
+        name: 'Winged Foot GC',
+        location: 'Mamaroneck, New York',
+        par: 72,
+        yards: 7258,
+        architect: 'A.W. Tillinghast',
+        yearBuilt: 1921,
+        url: 'assets/winged-foot.png',
+        hasHostedMajor: true, //Insert boolean value here
     },
     
-]
+];
