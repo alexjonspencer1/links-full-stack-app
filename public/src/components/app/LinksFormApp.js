@@ -10,11 +10,11 @@ class LinksFormApp extends Component {
 
     renderHTML() {
         return /*html*/`
-        <div>
-        <!-- Header goes here --!>
-          <main>
-          </main>
-        </div>  
+            <div>
+                <!-- Header goes here --!>
+                <main>
+                </main>
+            </div>   
         `;
     }
 }
