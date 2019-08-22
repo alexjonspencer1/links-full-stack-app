@@ -1,4 +1,4 @@
-const URL = 'https://grandgolfcourses.herokuapp.com/api';
+const URL = '/api';
 
 export function getGolfCourse() {
     const url = `${URL}/golfcourse`;
