@@ -6,7 +6,7 @@ class Header extends Component {
 
         return /*html*/`
             <header>
-                <img class="header-logo" src="../public//assets//page logo.png" alt="golf-site-logo">
+                <img class="header-logo" src="/assets//page-logo.png" alt="golf-site-logo">
                 <h1>${title}</h1>
                 <nav>
                     <a href="./">Home |</a>

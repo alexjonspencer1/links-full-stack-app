@@ -30,6 +30,7 @@ app.get('./api/golfcourse', (req, res) => {
             year,
             url,
             hosted_a_major as "hasHostedMajor"
+        FROM GOLFCOURSE;
     `)
         .then(result => {
             res.json(result.rows);
