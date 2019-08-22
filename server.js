@@ -13,13 +13,13 @@ client.connect();
 
 //Application Setup
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT_API;
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static('public'));
 
 //ROUTES HERE
-app.get('./api/golfcourse', (req, res) => {
+app.get('/api/golfcourse', (req, res) => {
     client.query(`
         SELECT
             name,
