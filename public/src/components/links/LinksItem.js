@@ -13,7 +13,7 @@ class LinksItem extends Component {
                             <p>Par: ${golfCourse.par}</p>
                             <p>Yards: ${golfCourse.yards}</p>
                             <p>Architect: ${golfCourse.architect}</p>
-                            <p>Year Built: ${golfCourse.yearBuilt}</p>
+                            <p>Year Built: ${golfCourse.year}</p>
                     </div>
             </li>
             
