@@ -9,6 +9,8 @@ const client = new Client(process.env.DATABASE_URL);
 client.connect()
     .then(() => {
         return client.query(`
+            
+
             CREATE TABLE golfcourse (
                 name VARCHAR(256) NOT NULL,
                 location VARCHAR(256) NOT NULL,
