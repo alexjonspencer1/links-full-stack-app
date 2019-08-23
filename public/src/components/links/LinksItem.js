@@ -7,7 +7,7 @@ class LinksItem extends Component {
         return /*html*/`
             <li>
                 <img class="golf-card-image" src="${golfCourse.url}" alt="${golfCourse.name}">
-                    <div>
+                    <div class="card-text-div">
                         <h1>${golfCourse.name}</h1><br>
                             <p>Location: ${golfCourse.location}</p>
                             <p>Par: ${golfCourse.par}</p>
