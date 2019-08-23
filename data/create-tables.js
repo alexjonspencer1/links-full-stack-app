@@ -15,7 +15,7 @@ client.connect()
                 par INTEGER NOT NULL,
                 yards INTEGER NOT NULL,
                 architect VARCHAR(256) NOT NULL,
-                year INTEGER,
+                year INTEGER NOT NULL,
                 url VARCHAR(256) NOT NULL,
                 hosted_a_major BOOLEAN NOT NULL
             );
