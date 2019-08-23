@@ -30,7 +30,7 @@ module.exports = [
         hasHostedMajor: false, //Insert boolean value here
     },
     {
-        name: 'Shinnecock Hills GC',
+        name: 'Shinnecock Hills Golf Club',
         location: 'Southampton, New York',
         par: 70,
         yards: 7041,
@@ -40,7 +40,7 @@ module.exports = [
         hasHostedMajor: true, //Insert boolean value here
     },
     {
-        name: 'The Old Course at St. Andrews Links',
+        name: 'The Old Course at St. Andrews',
         location: 'St. Andrews, Scotland',
         par: 72,
         yards: 7279,
@@ -60,7 +60,7 @@ module.exports = [
         hasHostedMajor: true, //Insert boolean value here
     },
     {
-        name: 'Pebble Beach G Links',
+        name: 'Pebble Beach Golf Links',
         location: 'Pebble Beach, California',
         par: 72,
         yards: 6828,
@@ -70,7 +70,7 @@ module.exports = [
         hasHostedMajor: true, //Insert boolean value here
     },
     {
-        name: 'Winged Foot GC',
+        name: 'Winged Foot Golf Club',
         location: 'Mamaroneck, New York',
         par: 72,
         yards: 7258,

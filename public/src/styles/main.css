@@ -8,6 +8,10 @@ header {
     width: 100%;
 }
 
+body {
+    background: rgb(197, 196, 196);
+}
+
 .header-logo {
     height: auto;
     width: 12%;
@@ -45,6 +49,7 @@ ul {
 
 .golf-card-image {
     height: 80%;
+    margin-left: 75px;
 }
 
 li h1 {
@@ -54,9 +59,11 @@ li h1 {
 }
 
 li {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    /* justify-content: space-evenly;
+    align-items: center; */
     font-family: 'Slabo 27px', serif;
     border: 2px solid darkgreen;
     background:white;
@@ -89,6 +96,7 @@ li p {
 
     .golf-card-image {
         height: 55%;
+        margin-left: 0px;
     }
 
     ul {
@@ -98,5 +106,18 @@ li p {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    li {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr;
+        align-items: center; */
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Slabo 27px', serif;
+        border: 2px solid darkgreen;
+        background:white;
+        height: 200px;
+        /* min-width: 150px; */
+    }
+    
     
   }

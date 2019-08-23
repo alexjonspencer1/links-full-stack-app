@@ -14,6 +14,7 @@ class LinksItem extends Component {
                             <p>Yards: ${golfCourse.yards}</p>
                             <p>Architect: ${golfCourse.architect}</p>
                             <p>Year Built: ${golfCourse.year}</p>
+                            <p>Hosted Major: ${golfCourse.hasHostedMajor}</p>
                     </div>
             </li>
             
