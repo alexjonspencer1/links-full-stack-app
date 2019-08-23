@@ -10,11 +10,11 @@ class LinksItem extends Component {
                     <div class="card-text-div">
                         <h1>${golfCourse.name}</h1><br>
                             <p>Location: ${golfCourse.location}</p>
+                            <p>Region: ${golfCourse.region}</p>
                             <p>Par: ${golfCourse.par}</p>
                             <p>Yards: ${golfCourse.yards}</p>
                             <p>Architect: ${golfCourse.architect}</p>
                             <p>Year Built: ${golfCourse.year}</p>
-                            <p>Hosted Major: ${golfCourse.hasHostedMajor}</p>
                     </div>
             </li>
             

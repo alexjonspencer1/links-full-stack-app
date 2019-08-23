@@ -24,6 +24,7 @@ app.get('/api/golfcourses', (req, res) => {
         SELECT
             name,
             location,
+            region,
             par,
             yards,
             architect,
