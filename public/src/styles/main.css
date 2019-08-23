@@ -124,6 +124,17 @@ li p {
         height: 200px;
         /* min-width: 150px; */
     }
+    li p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: rgb(83, 83, 83);
+        font-size: 0.85em;
+    }
+    li h1 {
+        font-size: 1.2em;
+        color: darkgreen;
+        font-weight: bold;
+    }
     
     
   }
