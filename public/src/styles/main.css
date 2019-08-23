@@ -86,6 +86,7 @@ li p {
     header {
         display: flex;
         flex-direction: column;
+        width: auto;
     }
     header nav {
         margin: 8px 0px 5px 0px;
