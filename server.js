@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.static('public'));
 
 //ROUTES HERE
-app.get('/api/golfcourse', (req, res) => {
+app.get('/api/golfcourses', (req, res) => {
     client.query(`
         SELECT
             name,
