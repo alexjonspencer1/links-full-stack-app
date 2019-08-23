@@ -10,6 +10,7 @@ client.connect()
     .then(() => {
         return client.query(`
             DROP TABLE IF EXISTS golfcourse;
+            DROP TABLE IF EXISTS regions;
         `);
     })
     .then(

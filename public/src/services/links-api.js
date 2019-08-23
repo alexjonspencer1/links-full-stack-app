@@ -6,3 +6,21 @@ export function getGolfCourse() {
     return fetch(url)
         .then(response => response.json());
 }
+
+export function addCourse(golfCourse) {
+    const url = `${URL}/links`;
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(golfCourse)
+    })
+        .then(response => response.json());
+}
+
+export function getRegions() {
+    const url = `${URL}/regions`;
+    return fetch(url)
+        .then(response => response.json());
+}
