@@ -8,7 +8,7 @@ export function getGolfCourse() {
 }
 
 export function addCourse(golfCourse) {
-    const url = `${URL}/links`;
+    const url = `${URL}/golfcourses`;
     return fetch(url, {
         method: 'POST',
         headers: {

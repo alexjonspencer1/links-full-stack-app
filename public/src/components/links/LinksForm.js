@@ -18,7 +18,7 @@ class LinksForm extends Component {
             const golfCourse = {
                 name: formData.get('name'),
                 location: formData.get('location'),
-                regionId: +formData.get('region'),
+                regionId: formData.get('region-id'),
                 par: +formData.get('par'),
                 yards: +formData.get('yards'),
                 architect: formData.get('architect'),
@@ -30,6 +30,7 @@ class LinksForm extends Component {
             addCourse(golfCourse)
                 .then((/*saved*/) => {
                     window.location = `links-list.html`;
+                    console.log(golfCourse);
                 })
                 .catch(err => {
                     console.log('course not saved', err);
@@ -40,11 +41,13 @@ class LinksForm extends Component {
 
     renderHTML() {
         const regions = this.props.regions;
+        console.log(regions);
         const optionsList = regions.map(region => {
             return /*html*/`
-                <option value=${regions.id}">${region.name}</option>
-                `;
+            <option value="${region.id}">${region.region}</option>
+            `;
         });
+        console.log(optionsList);
 
         return /*html*/`
             <form>
@@ -58,7 +61,7 @@ class LinksForm extends Component {
                 </p>
                 <p>
                     <label for="region">Region</label>
-                    <select>
+                    <select id="region" name="region-id" required>
                         <option disabled selected>Select A Region</option>
                         ${optionsList.join('')}
                     </select>

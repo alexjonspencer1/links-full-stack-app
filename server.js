@@ -31,8 +31,7 @@ app.get('/api/golfcourses', (req, res) => {
             c.yards,
             c.architect,
             c.year,
-            c.url,
-            c.hosted_a_major as "hasHostedMajor"
+            c.url
         FROM golfcourse c
         JOIN regions t
         ON c.region_id = t.id
@@ -83,11 +82,11 @@ app.get('/api/golfcourses/:id', (req, res) => {
 app.post('/api/golfcourses', (req, res) => {
     const golfcourse = req.body;
     client.query(`
-        INSERT INTO golfcourse (name, location, region_id, par, yards, architect, year, url, hosted_a_major)
+        INSERT INTO golfcourse (name, location, region_id, par, yards, architect, year, url)
         VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
         RETURNING *;
     `,
-    [golfcourse.name, golfcourse.location, golfcourse.regionId, golfcourse.par, golfcourse.yards, golfcourse.architect, golfcourse.year, golfcourse.url, golfcourse.hasHostedMajor]
+    [golfcourse.name, golfcourse.location, golfcourse.regionId, golfcourse.par, golfcourse.yards, golfcourse.architect, golfcourse.year, golfcourse.url]
     )
         .then(result => {
             res.json(result.rows[0]);
