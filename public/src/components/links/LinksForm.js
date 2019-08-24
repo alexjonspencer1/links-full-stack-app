@@ -18,11 +18,11 @@ class LinksForm extends Component {
             const golfCourse = {
                 name: formData.get('name'),
                 location: formData.get('location'),
-                regionId: +formData.get('region-id'),
-                par: formData.get('par'),
-                yards: formData.get('yards'),
+                regionId: +formData.get('region'),
+                par: +formData.get('par'),
+                yards: +formData.get('yards'),
                 architect: formData.get('architect'),
-                year: formData.get('year'),
+                year: +formData.get('year'),
                 url: formData.get('url'),
 
             };
@@ -40,9 +40,9 @@ class LinksForm extends Component {
 
     renderHTML() {
         const regions = this.props.regions;
-        const optionsList = regions.map(regions => {
+        const optionsList = regions.map(region => {
             return /*html*/`
-                <option value=${regions.id}">${regions.name}</option>
+                <option value=${regions.id}">${region.name}</option>
                 `;
         });
 
@@ -81,6 +81,10 @@ class LinksForm extends Component {
                 <p>
                     <label for="year">Year Built</label>
                     <input id="year" name="year" required placeholder="Year Built">
+                </p>
+                <p>
+                    <label for="url">Image URL</label>
+                    <input id="url" name="url" required>
                 </p>
                 <p>
                     <button>Add Course</button>

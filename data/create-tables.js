@@ -17,7 +17,7 @@ client.connect()
             CREATE TABLE golfcourse (
                 name VARCHAR(256) NOT NULL,
                 location VARCHAR(256) NOT NULL,
-                region_id VARCHAR(256) NOT NULL REFERENCES regions(id),
+                region_id INTEGER NOT NULL REFERENCES regions(id),
                 par INTEGER NOT NULL,
                 yards INTEGER NOT NULL,
                 architect VARCHAR(256) NOT NULL,

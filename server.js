@@ -17,6 +17,7 @@ const PORT = process.env.PORT;
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static('public'));
+app.use(express.json());
 
 //ROUTES HERE
 app.get('/api/golfcourses', (req, res) => {
@@ -24,7 +25,7 @@ app.get('/api/golfcourses', (req, res) => {
         SELECT
             name,
             location,
-            region,
+            region_id,
             par,
             yards,
             architect,
