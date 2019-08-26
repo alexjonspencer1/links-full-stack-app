@@ -8,7 +8,7 @@ class LinksDetail extends Component {
             <section class="detail-page">
                 <img class="detail-page-logo" src="${golfCourse.url}" alt="${golfCourse.name}">
                 <div class="detail-div">
-                    <h2>${golfCourse.name}</h2><br>
+                    <h2>${golfCourse.name}</h2>
                         <p class="detail-list-p">Location: ${golfCourse.location}</p>
                         <p class="detail-list-p">Region: ${golfCourse.region}</p>
                         <p class="detail-list-p">Par: ${golfCourse.par}</p>
