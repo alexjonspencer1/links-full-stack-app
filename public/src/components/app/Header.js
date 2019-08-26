@@ -11,7 +11,7 @@ class Header extends Component {
                 <nav>
                     <a href="./">Home |</a>
                     <a href="./links-list.html">Golf Courses |</a>
-                    <a href="./links-form.html">Add A Golf Course</a>
+                    <a href="./links-form.html">Add A Golf Course | </a>
                     <a href="./links-detail.html">Golf Course Detail</a>
                 </nav>
             </header>

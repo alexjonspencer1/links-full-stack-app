@@ -65,7 +65,7 @@ a {
     text-decoration: none;
 }
 
-.li {
+li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -120,19 +120,23 @@ button {
 }
 
 .detail-page {
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
-    align-items: center;
+    display: grid;
     margin-top: 100px;
-    /* grid-template-columns: 1fr 1fr; */
-    /* height: auto; */
+    max-width: 650px;
+    grid-template-columns: 300px 1fr;
+    background: white;
+    padding: 20px 20px;
+    border: 3px solid darkgreen;
+}
+
+.detail-list-p {
+    font-size: 0.8em;
+    color: rgb(83, 83, 83);
 }
 
 .detail-page-logo {
-    height: 15%;
-    width: 15%;
-    margin-right: 5%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .detail-div {
