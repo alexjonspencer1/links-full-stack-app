@@ -7,6 +7,12 @@ export function getGolfCourse() {
         .then(response => response.json());
 }
 
+export function getCourse(id) {
+    const url = `${URL}/golfcourses/${id}`;
+    return fetch(url)
+        .then(response => response.json());
+}
+
 export function addCourse(golfCourse) {
     const url = `${URL}/golfcourses`;
     return fetch(url, {

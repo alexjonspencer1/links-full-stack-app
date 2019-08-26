@@ -57,9 +57,15 @@ li h1 {
     font-size: 1.3em;
     color: darkgreen;
     font-weight: bold;
+    /* text-decoration: none; */
+    /* font-style: none; */
+} 
+
+a {
+    text-decoration: none;
 }
 
-li {
+.li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -111,6 +117,32 @@ button {
     font-family: 'Slabo 27px', serif;
     text-transform: uppercase;
     font-size: 1.02em;
+}
+
+.detail-page {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* height: auto; */
+}
+
+.detail-page-logo {
+    height: 15%;
+    width: 15%;
+    margin-right: 5%;
+}
+
+.detail-div {
+    /* border: 2px solid white; */
+    padding: 10px 10px;
+    font-family: 'Slabo 27px', serif;
+    line-height: 1.1em;
+    color: darkgreen;
+    font-size: 1.3em;
+    width: 400px;
 }
 
 @media only screen and (max-width: 650px) {

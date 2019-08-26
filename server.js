@@ -23,6 +23,7 @@ app.use(express.json());
 app.get('/api/golfcourses', (req, res) => {
     client.query(`
         SELECT
+            c.id,
             c.name,
             c.location,
             c.region_id,

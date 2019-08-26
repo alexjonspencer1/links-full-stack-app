@@ -15,6 +15,7 @@ client.connect()
             );
 
             CREATE TABLE golfcourse (
+                id SERIAL PRIMARY KEY NOT NULL,
                 name VARCHAR(256) NOT NULL,
                 location VARCHAR(256) NOT NULL,
                 region_id INTEGER NOT NULL REFERENCES regions(id),
