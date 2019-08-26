@@ -23,7 +23,7 @@ client.connect()
                 yards INTEGER NOT NULL,
                 architect VARCHAR(256) NOT NULL,
                 year INTEGER NOT NULL,
-                url VARCHAR(256) NOT NULL,
+                url VARCHAR(512) NOT NULL,
                 hosted_a_major BOOLEAN
             );
         `);
