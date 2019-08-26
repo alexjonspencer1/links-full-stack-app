@@ -52,42 +52,42 @@ class LinksForm extends Component {
         return /*html*/`
             <form>
                 <p class="input-font">
-                    <label for="name">Name</label>
+                    <label for="name">Name</label> <br>
                     <input id="name" name="name" required placeholder="Golf Course Name">
                 </p>
                 <p>
-                    <label for="location">Location</label>
+                    <label for="location">Location</label> <br>
                     <input id="location" name="location" required placeholder="Location">
                 </p>
                 <p>
-                    <label for="region">Region</label>
+                    <label for="region">Region</label> <br>
                     <select id="region" name="region-id" required>
                         <option disabled selected>Select A Region</option>
                         ${optionsList.join('')}
                     </select>
                 </p>
                 <p>
-                    <label for="par">Par</label>
+                    <label for="par">Par</label> <br>
                     <span class="horizontally-centered-slider">
                         <input id="par" name="par" type="range" min="65" max="75" value="75">
                         <span id="par-display">72</span>
                     </span>
                 </p>
                 <p>
-                    <label for="yards">Total Yards</label>
+                    <label for="yards">Total Yards</label><br>
                     <input id="yards" name="yards" required placeholder="Yards">
                 </p>
                 <p>
-                    <label for="architect">Architect</label>
+                    <label for="architect">Architect</label><br>
                     <input id="architect" name="architect" required placeholder="Architect">
                 </p>
                 <p>
-                    <label for="year">Year Built</label>
+                    <label for="year">Year Built</label> <br>
                     <input id="year" name="year" required placeholder="Year Built">
                 </p>
                 <p>
-                    <label for="url">Image URL</label>
-                    <input id="url" name="url" required>
+                    <label for="url">Image URL</label> <br>
+                    <input id="url" name="url" required placeholder="Insert Image URL">
                 </p>
                 <p>
                     <button>Add Course</button>

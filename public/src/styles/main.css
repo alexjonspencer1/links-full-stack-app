@@ -80,18 +80,26 @@ form {
     justify-content: space-between;
     border: 1px solid darkgreen;
     max-width: 330px;
-    height: 300px;
-    margin-top: 30px;
+    height: auto;
     background: white;
     padding: 25px 25px;
+    margin: auto;
+    margin-top: 25px;
 }
 
 form input {
-    margin-left: 10px;
-    width: 200px;
+    width: 300px;
     font-family: 'Slabo 27px', serif;
     font-size: 0.85em;
     color: darkgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#region {
+    margin: 10px 0px 10px 0px;
+    width: 300px;
 }
 
 li p {
@@ -107,7 +115,7 @@ label {
 
 button {
     padding: 10px 10px;
-    margin-top: 20px;
+    margin-top: 5px;
     background: darkgreen;
     color: white;
     font-family: 'Slabo 27px', serif;
@@ -117,6 +125,7 @@ button {
 
 .detail-page {
     display: grid;
+    margin: auto;
     margin-top: 100px;
     max-width: 650px;
     grid-template-columns: 300px 1fr;
