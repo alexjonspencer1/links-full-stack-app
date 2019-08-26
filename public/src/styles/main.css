@@ -51,7 +51,7 @@ ul {
 
 .golf-card-image {
     height: 80%;
-    margin-left: 75px;
+    margin: auto;
 }
 
 li h1 {
@@ -178,7 +178,7 @@ button {
 
     .golf-card-image {
         height: 55%;
-        margin-left: 0px;
+        margin-left: 0 auto;
     }
 
     ul {
@@ -191,26 +191,25 @@ button {
 
     li {
         display: flex;
-        /* grid-template-columns: 1fr 1fr;
-        align-items: center; */
         justify-content: space-evenly;
         align-items: center;
         font-family: 'Slabo 27px', serif;
         border: 2px solid darkgreen;
         background:white;
         height: 200px;
-        /* min-width: 150px; */
     }
     li p {
         margin-top: 5px;
         margin-bottom: 5px;
         color: rgb(83, 83, 83);
-        font-size: 0.9em;
+        font-size: 0.8em;
+        margin-right: 10px;
     }
     li h1 {
         font-size: 0.9em;
         color: darkgreen;
         font-weight: bold;
+        margin-right: 10px;
     }
     form input {
         margin-left: 10px;
