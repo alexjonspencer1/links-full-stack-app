@@ -1,0 +1,275 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Slabo 27px', serif;
+    background-color: #eee;
+    padding: 15px 15px;
+    width: 100%;
+}
+
+body {
+    background: rgb(197, 196, 196);
+}
+
+.header-logo {
+    height: auto;
+    width: 20%;
+    margin: 5px 5px;
+}
+
+header h1 {
+    font-size: 3.0em;
+    flex-grow: 1;
+    color: darkgreen;
+    text-shadow: 1px 1px 1px grey;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    color: darkgreen;
+}
+
+header nav {
+    margin-right: 100px;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.golf-card-image {
+    height: 80%;
+    margin: auto;
+}
+
+li h1 {
+    font-size: 1.3em;
+    color: darkgreen;
+    font-weight: bold;
+} 
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-family: 'Slabo 27px', serif;
+    border: 2px solid darkgreen;
+    background:white;
+    height: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid darkgreen;
+    max-width: 330px;
+    height: auto;
+    background: white;
+    padding: 25px 25px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+form input {
+    width: 300px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.85em;
+    color: darkgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#region {
+    margin: 10px 0px 10px 0px;
+    width: 300px;
+}
+
+li p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(83, 83, 83);
+}
+
+label {
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 10px;
+    margin-top: 5px;
+    background: darkgreen;
+    color: white;
+    font-family: 'Slabo 27px', serif;
+    text-transform: uppercase;
+    font-size: 1.02em;
+}
+
+.detail-page {
+    display: grid;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 650px;
+    grid-template-columns: 300px 1fr;
+    background: white;
+    padding: 20px 20px;
+    border: 3px solid darkgreen;
+}
+
+.detail-list-p {
+    font-size: 0.8em;
+    color: rgb(83, 83, 83);
+}
+
+.detail-page-logo {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.detail-div {
+    /* border: 2px solid white; */
+    padding: 10px 10px;
+    font-family: 'Slabo 27px', serif;
+    line-height: 1.1em;
+    color: darkgreen;
+    font-size: 1.3em;
+    width: 400px;
+}
+
+@media only screen and (max-width: 650px) {
+    header h1 {
+        font-size: 1.2em;
+        margin-top: 8px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    header nav {
+        margin: 8px 0px 5px 0px;
+    }
+    header nav a {
+        font-size: 0.9rem;
+    }
+    .header-logo {
+        height: 90px;
+        width: auto;
+        margin: 5px 5px;
+    }
+
+    .golf-card-image {
+        height: 55%;
+        margin-left: 0 auto;
+    }
+
+    ul {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Slabo 27px', serif;
+        border: 2px solid darkgreen;
+        background:white;
+        height: 200px;
+    }
+    li p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: rgb(83, 83, 83);
+        font-size: 0.8em;
+        margin-right: 10px;
+    }
+    li h1 {
+        font-size: 0.9em;
+        color: darkgreen;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    form input {
+        width: 260px;
+        font-family: 'Slabo 27px', serif;
+        font-size: 0.9em;
+        color: darkgreen;
+    }
+    
+    li p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: rgb(83, 83, 83);
+    }
+    
+    label {
+        font-family: 'Slabo 27px', serif;
+        font-size: 1em;
+    }
+    
+    button {
+        padding: 10px 10px;
+        margin-top: 20px;
+        background: darkgreen;
+        color: white;
+        font-family: 'Slabo 27px', serif;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+
+    .detail-page {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Slabo 27px', serif;
+        border: 2px solid darkgreen;
+        background:white;
+        height: 150px;
+    }
+    
+    .detail-list-p {
+        font-size: 0.7em;
+        color: rgb(83, 83, 83);
+    }
+    
+    .detail-page-logo {
+        height: 50%;
+        margin: auto;
+    }
+    
+    .detail-div {
+        padding: 10px 10px;
+        font-family: 'Slabo 27px', serif;
+        line-height: 1.0em;
+        color: darkgreen;
+        font-size: 1.3em;
+    }
+    
+  }

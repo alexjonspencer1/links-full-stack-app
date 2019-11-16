@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <title>Famous Golf Courses</title>
+</head>
+<body>
+    <header>
+        <img class="header-logo" src="assets/main-page-logo.png" alt="golf-site-logo">
+        <h1>${title}</h1>
+        <nav>
+            <a href="./">Home |</a>
+            <a href="./links-list.html">Golf Courses |</a>
+            <a href="./links-form.html">Add A Golf Course</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <p class="input-font">
+                <label for="name">Name</label>
+                <input id="name" name="name" required placeholder="Golf Course Name">
+            </p>
+            <p>
+                <label for="location">Location</label>
+                <input id="location" name="location" required placeholder="Location">
+            </p>
+            <p>
+                <label for="region">Region</label>
+                <select>
+                    <option disabled selected>Select A Region</option>
+                </select>
+            </p>
+            <p>
+                <label for="par">Par</label>
+                <span class="horizontally-centered-slider">
+                    <input id="par" name="par" type="range" min="65" max="75" value="75">
+                    <span id="par-display">72</span>
+                </span>
+            </p>
+            <p>
+                <label for="yards">Total Yards</label>
+                <input id="yards" name="yards" required placeholder="Yards">
+            </p>
+            <p>
+                <label for="architect">Architect</label>
+                <input id="architect" name="architect" required placeholder="Architect">
+            </p>
+            <p>
+                <label for="year">Year Built</label>
+                <input id="year" name="year" required placeholder="Year Built">
+            </p>
+            <p>
+                <button>Add Course</button>
+            </p>
+        </form>
+    </main>
+
+</body>
+</html>
